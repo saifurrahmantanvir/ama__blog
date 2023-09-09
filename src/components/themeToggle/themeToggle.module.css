@@ -1,0 +1,37 @@
+.container {
+   padding: 0 0.5rem;
+   width: 6rem;
+   height: 3rem;
+   border-radius: 0.8rem;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+@media only screen and (max-width: 64em) {
+   .container {
+      display: none;
+   }
+}
+
+.light,
+.dark {
+   height: 2.2rem;
+   width: 2.2rem;
+   position: absolute;
+   border-radius: 0.6rem;
+   transition: left 0.3s;
+}
+
+.light {
+   left: 3.4rem;
+   /* right: 0.5rem; */
+   background-color: white;
+}
+
+.dark {
+   left: 0.4rem;
+   background-color: #0f172a;
+}

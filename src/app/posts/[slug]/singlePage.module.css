@@ -1,0 +1,101 @@
+.infoContainer {
+   display: flex;
+   gap: 5rem;
+   align-items: center;
+ }
+ 
+ .textContainer {
+   flex: 1;
+ }
+ 
+ .title {
+   font-size: 6.5rem;
+   margin-bottom: 5rem;
+ }
+ 
+ .user {
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+ }
+ 
+ .userImageContainer {
+   width: 5rem;
+   height: 5rem;
+   position: relative;
+ }
+ 
+ .avatar {
+   border-radius: 50%;
+   object-fit: cover;
+ }
+ 
+ .userTextContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   color: var(--softTextColor);
+ }
+ 
+ .username {
+   font-size: 2rem;
+   font-weight: 500;
+ }
+ 
+ .imageContainer {
+   flex: 1;
+   height: 35rem;
+   position: relative;
+ }
+ 
+ .image {
+   object-fit: cover;
+ }
+ 
+ .content {
+   display: flex;
+   gap: 5rem;
+ }
+ 
+ .post {
+   flex: 5;
+   margin-top: 60px;
+ }
+
+ .description :is(h1,h2,h3,h4,h5,h6) {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+ 
+ .description p {
+   font-size: 1.8rem;
+   font-weight: 300;
+   line-height: 1.5;
+   margin-bottom: 3rem;
+ }
+ 
+ @media screen and (max-width: 1536px) {
+   .title {
+     font-size: 54px;
+   }
+ }
+ @media screen and (max-width: 1280px) {
+   .title {
+     font-size: 48px;
+   }
+ }
+ @media screen and (max-width: 1024px) {
+   .imageContainer {
+     display: none;
+   }
+ }
+ @media screen and (max-width: 640px) {
+   .title {
+     font-size: 36px;
+   }
+ 
+   .description p{
+     font-size: 18px;
+   }
+ }

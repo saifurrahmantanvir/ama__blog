@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+   --bg: white;
+   --textColor: black;
+   --softBg: #f0f0f0;
+   --softTextColor: #626262;
+}
+
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 64em) {
+   html {
+      font-size: 58.4%;
+   }
+}
+
+body {
+   font-size: 1.6rem;
+   font-family: 'Sora', monospace;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+button {
+   font-family: inherit;
+   font-weight: bold;
+}
+
+input,
+texarea {
+   font-family: inherit;
+}
+
+select {
+   font-family: inherit;
+   background: none;
+   color: #fff;
+ }
+
+.dark {
+   --bg: #0f172a;
+   --textColor: #ddd;
+   --softBg: #1f273a;
+   --softTextColor: #a6a6a6;
+}
+
+.container {
+   min-height: 100vh;
+   background-color: var(--bg);
+   color: var(--textColor);
+}
+
+.wrapper {
+   max-width: 128rem;
+   margin: 0 auto;
+   padding: 0 5rem;
+}
+
+@media only screen and (max-width: 80em) {
+   .wrapper {
+      max-width: 102.4rem;
+   }
+}
+
+@media only screen and (max-width: 64em) {
+   .wrapper {
+      max-width: 76.8rem;
+      padding: 0 4rem;
+   }
+}
+
+@media only screen and (max-width: 48em) {
+   .wrapper {
+      max-width: 64rem;
+      padding: 0 3rem;
+   }
+}
+
+@media only screen and (max-width: 40em) {
+   .wrapper {
+      max-width: 47.5rem;
+   }
+}
+
+.ql-container{
+   font-size: 28px !important;
+   font-family: 'Sora', monospace;
+}
+
+
+.quill > .ql-container > .ql-editor > p {
+   font-family: 'Sora', monospace;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before{
+   color: #b3b3b1;
+   font-family: 'Sora', monospace;
+   font-style: normal;
+   font-style: unset;
+}
+
+
+/* DROPDOWN */
+.dropdown {
+   position: relative;
+   display: inline-block;
+   border-radius: 3px;
+   border: 1px solid var(--softBg);
+}
+
+.dropdown__container {
+   display: flex;
+   gap: 3rem;
+   align-items: center;
+   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 26em) {
+   .dropdown__container {
+   justify-content: space-between;
+   gap: 1rem;
+   }
+}
+
+.dropdown__btn {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 1.6rem;
+   font-weight: 400;
+   text-align: start;
+   padding: 1.3rem 1.6rem;
+   color: var(--primary);
+   background: var(--bg);
+   border: none;
+   min-width: 18rem;
+   border-radius: 3px;
+   cursor: pointer;
+   text-transform: capitalize;
+}
+
+@media only screen and (max-width: 26em) {
+   .dropdown__btn {   
+      font-size: 1.5rem;
+      min-width: 16rem;
+   }
+}
+
+/* .dropdown__btn:hover,
+.dropdown__btn:focus {
+   background-color: #e2e2e2;
+}
+ */
+
+.dropdown__content {
+   display: none;
+   position: absolute;
+   top: 115%;
+   border: 1px solid var(--textColor);
+   background-color: var(--bg);
+   min-width: 18rem;
+   overflow: auto;
+   border-radius: 3px;
+   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+   z-index: 1;
+
+   @media only screen and (max-width: 26em) {
+      font-size: 1.5rem;
+      min-width: 16rem;
+   }
+}
+
+.dropdown__content span {
+   font-size: 1.5rem;
+   display: block;
+   font-weight: 300;
+   color: var(--textColor);
+   text-transform: capitalize;
+   padding: 1.2rem 1.6rem;
+}
+
+.dropdown__content span:hover {
+   background-color: var(--bg);
+   cursor: pointer;
+}
+
+.show {
+   display: block;
+}

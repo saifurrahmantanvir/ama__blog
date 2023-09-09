@@ -1,0 +1,118 @@
+.desk {
+   cursor: pointer;
+}
+
+@media only screen and (max-width: 64em) {
+   .desk {
+      display: none;
+   }
+}
+
+.responsiveMenu {
+   z-index: 400;
+   display: none;
+   flex-direction: column;
+   gap: 2rem;
+   position: absolute;
+   inset: 0 0 0 50%;
+   padding: 8rem 2rem 2rem;
+   background-color: hsla(0, 0%, 100%, 0.205);
+   backdrop-filter: blur(10px);
+}
+
+@media only screen and (max-width: 64em) {
+   .responsiveMenu {
+      display: flex;
+   }
+}
+
+.responsiveMenu a,
+.responsiveMenu span {
+   padding: 1rem;
+}
+
+.burger {
+   display: none;
+   align-items: center;
+   justify-content: center;
+   width: 4rem;
+   height: 3.3rem;
+   position: relative;
+   cursor: pointer;
+   transform: rotate(0deg);
+   -webkit-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   transition: .5s ease-in-out;
+   -webkit-transition: .5s ease-in-out;
+   -o-transition: .5s ease-in-out;
+   -moz-transition: .5s ease-in-out;
+}
+
+@media only screen and (max-width: 64em) {
+   .burger {
+      display: flex;
+   }
+}
+
+.burger span {
+   display: block;
+   position: absolute;
+   height: 4px;
+   width: 100%;
+   background: white;
+   border-radius: 0;
+   opacity: 1;
+   left: 0;
+   transform: rotate(0deg);
+   -webkit-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   transition: .25s ease-in-out;
+   -webkit-transition: .25s ease-in-out;
+   -o-transition: .25s ease-in-out;
+   -moz-transition: .25s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+   top: 0px;
+   width: 40%;
+}
+
+.burger span:nth-child(2) {
+   top: 1.2rem;
+}
+ 
+.burger span:nth-child(3) {
+   top: 2.4rem;
+   width: 60%;
+}
+
+.burger.open {
+   z-index: 500;
+   transform: translate(-1px, -1px);
+}
+ 
+.burger.open span:nth-child(1) {
+   top: 1.8rem;
+   width: 80%;
+   transform: rotate(135deg);
+   -webkit-transform: rotate(135deg);
+   -o-transform: rotate(135deg);
+   -moz-transform: rotate(135deg);
+}
+ 
+.burger.open span:nth-child(2) {
+   opacity: 0;
+   width: 80%;
+   left: -6rem;
+}
+ 
+.burger.open span:nth-child(3) {
+   top: 1.8rem;
+   width: 80%;
+   transform: rotate(-135deg);
+   -webkit-transform: rotate(-135deg);
+   -o-transform: rotate(-135deg);
+   -moz-transform: rotate(-135deg);
+}

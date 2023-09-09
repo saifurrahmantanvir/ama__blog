@@ -1,0 +1,74 @@
+.container {
+   margin-top: 50px;
+ }
+ 
+ .title {
+   color: var(--softTextColor);
+   margin-bottom: 30px;
+ }
+ 
+ .write {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px;
+ }
+ 
+ .input {
+   padding: 1.5rem 2rem;
+   width: 100%;
+ }
+
+ .input:focus {
+  outline: none;
+ }
+ 
+ .button {
+   padding: 1.5rem 2.5rem;
+   background-color: teal;
+   color: white;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   border-radius: 2px;
+ }
+ 
+ .comments{
+   margin-top: 50px;
+ }
+ 
+ .comment{
+   margin-bottom: 50px;
+ }
+ 
+ .user {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   margin-bottom: 20px;
+ }
+ 
+ .image {
+   border-radius: 50%;
+   object-fit: cover;
+ }
+ 
+ .userInfo {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   color: var(--softTextColor);
+ }
+ 
+ .username {
+   font-weight: 500;
+ }
+ 
+ .date{
+   font-size: 14px;
+ }
+ 
+ .desc{
+   font-size: 18px;
+   font-weight: 300;
+ }

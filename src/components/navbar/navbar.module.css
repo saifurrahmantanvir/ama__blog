@@ -1,0 +1,46 @@
+.container {
+   height: 10rem;
+   display: flex;
+   gap: 3rem;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.social {
+   display: flex;
+   gap: 1rem;
+   flex: 1;
+}
+
+@media only screen and (max-width: 64em) {
+   .social {
+      display: none;
+   }
+}
+
+.logo {
+   flex: 1;
+   text-align: start;
+   font-size: 3.5rem;
+   white-space: nowrap;
+   font-weight: 800;
+}
+
+.links {
+   /* flex: 1; */
+   display: flex;
+   gap: 3rem;
+   align-items: center;
+}
+
+@media only screen and (max-width: 48em) {
+   .links {
+      gap: 1rem;
+   }
+}
+
+@media only screen and (max-width: 64em) {
+   .desk {
+      display: none;
+   }
+}
